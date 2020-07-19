@@ -78,6 +78,10 @@ PRODUCT_PACKAGES += \
     android.software.opengles.deqp.level-2021-03-01.prebuilt.xml \
     android.software.vulkan.deqp.level-2021-03-01.prebuilt.xml
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # HDMI
 PRODUCT_PACKAGES += \
     android.hardware.tv.cec@1.0-impl \
