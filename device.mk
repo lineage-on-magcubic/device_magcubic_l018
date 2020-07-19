@@ -77,6 +77,10 @@ PRODUCT_PACKAGES += \
     android.software.opengles.deqp.level-2021-03-01.prebuilt.xml \
     android.software.vulkan.deqp.level-2021-03-01.prebuilt.xml
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.sun50iw15p1 \
