@@ -138,5 +138,9 @@ PRODUCT_SHIPPING_API_LEVEL := 34
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
 
+# Vendor service manager
+PRODUCT_PACKAGES += \
+    vndservicemanager
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/magcubic/l018/l018-vendor.mk)
