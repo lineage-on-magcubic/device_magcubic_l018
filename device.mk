@@ -96,6 +96,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.hdmi.cec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hdmi.cec.xml
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.batteryless \
+    android.hardware.health-service.batteryless_recovery
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.sun50iw15p1 \
