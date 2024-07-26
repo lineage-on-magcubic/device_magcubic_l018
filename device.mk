@@ -85,6 +85,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.batteryless \
+    android.hardware.health-service.batteryless_recovery
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.sun50iw15p1 \
