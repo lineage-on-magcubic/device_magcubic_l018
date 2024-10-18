@@ -9,3 +9,6 @@ ro.surface_flinger.protected_contents=true
 
 # DRM
 drm.service.enabled=true
+
+# Recovery
+ro.recovery.batteryless=true
