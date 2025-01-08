@@ -125,6 +125,10 @@ PRODUCT_COPY_FILES += \
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.example
+
 # Security
 BOOT_SECURITY_PATCH := 2024-06-05
 INIT_BOOT_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
