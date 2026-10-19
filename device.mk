@@ -30,6 +30,9 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
+# Kernel
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
