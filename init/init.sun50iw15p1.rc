@@ -1,0 +1,61 @@
+import /vendor/etc/init/hw/init.modules.rc
+import /vendor/etc/init/hw/init.power.rc
+import /vendor/etc/init/hw/init.sensors.rc
+import /vendor/etc/init/hw/init.sun50iw15p1.usb.rc
+
+on fs
+    mount_all /vendor/etc/fstab.sun50iw15p1 --early
+
+on late-fs
+    mount_all /vendor/etc/fstab.sun50iw15p1 --late
+
+on post-fs-data
+    # TV server
+    mkdir /data/vendor/tvconfig 0771 system system
+
+    # HBG configuration
+    mkdir /data/vendor/HBG 0775 audioserver audioserver
+
+    # Create directory for audio data
+    mkdir /data/vendor/hardware/audio_d 0777 audio audio
+    mkdir /data/audio_d 0777 media media
+
+    # Create the directories used by the Wireless subsystem
+    mkdir /data/vendor/wifi 0771 wifi wifi
+    mkdir /data/vendor/wifi/wpa 0770 wifi wifi
+    mkdir /data/vendor/wifi/wpa/sockets 0770 wifi wifi
+
+    # Set indication (checked by vold) that we have finished this action
+    setprop vold.post_fs_data_done 1
+
+on boot
+    # bluetooth UART device
+    setprop persist.vendor.bluetooth_port /dev/ttyAS1
+    chmod 0660 ${persist.vendor.bluetooth_port}
+    chown bluetooth net_bt_admin ${persist.vendor.bluetooth_port}
+
+    # bluetooth power up/down interface
+    chmod 0660 /sys/class/rfkill/rfkill0/state
+    chmod 0660 /sys/class/rfkill/rfkill0/type
+    chown bluetooth net_bt_admin /sys/class/rfkill/rfkill0/state
+    chown bluetooth net_bt_admin /sys/class/rfkill/rfkill0/type
+    write /sys/class/rfkill/rfkill0/state 0
+
+    # bluetooth MAC address programming
+    setprop ro.bt.bdaddr_path /sys/class/addr_mgt/addr_bt
+    chown bluetooth net_bt_admin ${ro.bt.bdaddr_path}
+
+    chmod 0660 /proc/bluetooth/sleep/lpm
+    chmod 0660 /proc/bluetooth/sleep/btwrite
+    chmod 0660 /proc/bluetooth/sleep/btwake
+    chown bluetooth net_bt_admin /proc/bluetooth/sleep/lpm
+    chown bluetooth net_bt_admin /proc/bluetooth/sleep/btwrite
+    chown bluetooth net_bt_admin /proc/bluetooth/sleep/btwake
+
+    # only for aic device
+    chmod 0666 /sys/devices/platform/aic-bsp/rfkill/rfkill1/state
+    chmod 0666 /sys/devices/platform/aic-bsp/rfkill/rfkill1/type
+    chmod 0660 /dev/aicbt_dev
+    chown bluetooth net_bt_admin /sys/devices/platform/aic-bsp/rfkill/rfkill1/state
+    chown bluetooth net_bt_admin /sys/devices/platform/aic-bsp/rfkill/rfkill1/type
+    chown bluetooth net_bt_admin /dev/aicbt_dev

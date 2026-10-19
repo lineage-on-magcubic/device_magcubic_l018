@@ -1,0 +1,39 @@
+on boot
+    # Thermal policy
+    write /sys/class/thermal/thermal_zone0/policy power_allocator
+
+    # Thermal
+    chown system system /sys/class/thermal/thermal_zone0/policy
+    chmod 0660 /sys/class/thermal/thermal_zone0/policy
+    chown system system /sys/class/thermal/thermal_zone0/mode
+    chmod 0660 /sys/class/thermal/thermal_zone0/mode
+
+    # Display
+    write /sys/class/disp/disp/attr/runtime_enable 1
+    # CPU hotplug
+    write /sys/kernel/autohotplug/enable 1
+    write /sys/kernel/autohotplug/boost_all 0
+
+    # Scheduler utilization clamps
+    chown system system /proc/sys/kernel/sched_util_clamp_min
+    chown system system /proc/sys/kernel/sched_util_clamp_min_rt_default
+    chmod 0660 /proc/sys/kernel/sched_util_clamp_min
+    chmod 0660 /proc/sys/kernel/sched_util_clamp_min_rt_default
+    write /proc/sys/kernel/sched_util_clamp_min 256
+    write /proc/sys/kernel/sched_util_clamp_min_rt_default 512
+
+    # Read one page at a time for swap (default is 8)
+    write /proc/sys/vm/page-cluster 0
+
+on property:sys.boot_completed=1
+    # Cpuset tuning
+    write /dev/cpuset/background/cpus 0-1
+    write /dev/cpuset/system-background/cpus 0-2
+
+    # CPU shares
+    write /dev/cpuctl/background/cpu.shares 256
+    write /dev/cpuctl/background/cpu.uclamp.max 50
+    write /dev/cpuctl/dex2oat/cpu.shares 384
+    write /dev/cpuctl/system-background/cpu.shares 512
+    write /dev/cpuctl/foreground/cpu.shares 640
+    write /dev/cpuctl/top-app/cpu.shares 1024
