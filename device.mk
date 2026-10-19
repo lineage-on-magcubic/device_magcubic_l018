@@ -30,6 +30,20 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
+# Init
+PRODUCT_PACKAGES += \
+    fstab.sun50iw15p1 \
+    fstab.sun50iw15p1.vendor_ramdisk \
+    init.modules.rc \
+    init.power.rc \
+    init.sensors.rc \
+    init.sun50iw15p1.rc \
+    init.sun50iw15p1.usb.rc \
+    ueventd.sun50iw15p1.rc
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/init.recovery.sun50iw15p1.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.sun50iw15p1.rc
+
 # Kernel
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 

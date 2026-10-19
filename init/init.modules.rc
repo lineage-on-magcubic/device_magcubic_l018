@@ -1,0 +1,47 @@
+on early-init
+    # audio
+    insmod /vendor/lib/modules/snd_soc_sunxi_common.ko
+    insmod /vendor/lib/modules/snd_soc_sunxi_pcm.ko
+    insmod /vendor/lib/modules/snd_soc_sunxi_aaudio.ko
+    insmod /vendor/lib/modules/snd_soc_sunxi_i2s.ko
+    insmod /vendor/lib/modules/snd_soc_sunxi_owa.ko
+    insmod /vendor/lib/modules/snd_soc_sunxi_internal_codec.ko
+    insmod /vendor/lib/modules/snd_soc_sunxi_machine.ko
+    insmod /vendor/lib/modules/snd_alsa_trid.ko
+    # connectivity
+    insmod /vendor/lib/modules/sunxi_rfkill.ko
+    insmod /vendor/lib/modules/aic8800_bsp.ko
+    insmod /vendor/lib/modules/aic8800_btlpm.ko assert_level=3
+    insmod /vendor/lib/modules/aic8800_fdrv.ko
+    # ir-rx
+    insmod /vendor/lib/modules/ir-nec-decoder.ko
+    insmod /vendor/lib/modules/ir-rc5-decoder.ko
+    insmod /vendor/lib/modules/sunxi-ir-rx.ko
+    # gpu
+    insmod /vendor/lib/modules/mali_kbase.ko
+    # remote
+    insmod /vendor/lib/modules/xvatouch.ko
+    # sensors
+    insmod /vendor/lib/modules/sc7a20h.ko
+    # usb
+    insmod /vendor/lib/modules/sunxi-hci.ko
+    insmod /vendor/lib/modules/ehci-sunxi.ko
+    insmod /vendor/lib/modules/ohci-sunxi.ko
+    insmod /vendor/lib/modules/sunxi_usb_udc.ko
+    insmod /vendor/lib/modules/sunxi_usbc.ko
+
+on property:sys.boot_completed=1
+    insmod /vendor/lib/modules/sunrpc.ko
+    insmod /vendor/lib/modules/grace.ko
+    insmod /vendor/lib/modules/lockd.ko
+    insmod /vendor/lib/modules/nfs.ko
+    insmod /vendor/lib/modules/nfs_acl.ko
+    insmod /vendor/lib/modules/nfsv2.ko
+    insmod /vendor/lib/modules/nfsv3.ko
+    insmod /vendor/lib/modules/dns_resolver.ko
+    insmod /vendor/lib/modules/nfsv4.ko
+    insmod /vendor/lib/modules/nfs_layout_flexfiles.ko
+    insmod /vendor/lib/modules/nfs_layout_nfsv41_files.ko
+    insmod /vendor/lib/modules/cifs_md4.ko
+    insmod /vendor/lib/modules/cifs_arc4.ko
+    insmod /vendor/lib/modules/cifs.ko
