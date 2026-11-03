@@ -77,6 +77,10 @@ PRODUCT_PACKAGES += \
     android.software.opengles.deqp.level-2021-03-01.prebuilt.xml \
     android.software.vulkan.deqp.level-2021-03-01.prebuilt.xml
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm-service-lazy.clearkey
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
