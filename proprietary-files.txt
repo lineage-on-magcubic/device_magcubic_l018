@@ -98,6 +98,14 @@ vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service-aw.xml
 vendor/lib/hw/lib_aw_km_utility.so
 vendor/lib/libkeymint3_ca_aw.so
 
+# TEE
+vendor/bin/hw/tee-supplicant
+vendor/etc/init/android.supplicant@2.5-optee.rc
+vendor/lib/libteec.so
+vendor/lib/optee_armtz/2233b43b-cec6-449a-9509469f5023e425.ta
+vendor/lib/optee_armtz/883fbe61-1d49-8eb8-650f41ff390f3a4e.ta
+vendor/lib/optee_armtz/ee956e35-6b05-4d88-8a69-4510b01b88f6.ta
+
 # TV Server
 system/lib/vendor.sunxi.tv.graphics@1.0.so:vendor/lib/vendor.sunxi.tv.graphics@1.0.so
 vendor/bin/hw/tvserver
