@@ -136,6 +136,16 @@ PRODUCT_SHIPPING_API_LEVEL := 34
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
+    hardware/aw \
+
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb-service.aw \
+    android.hardware.usb.gadget-service.aw
+
+PRODUCT_PACKAGES += \
+    android.hardware.usb.accessory.prebuilt.xml \
+    android.hardware.usb.host.prebuilt.xml
 
 # Vendor service manager
 PRODUCT_PACKAGES += \
