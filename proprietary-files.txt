@@ -164,6 +164,12 @@ vendor/lib/libvenc_jpeg.so
 vendor/lib/libvencoder.so
 vendor/lib/libvideoengine.so
 
+# Sensors
+vendor/bin/hw/android.hardware.sensors@2.0-service
+vendor/etc/gsensor.cfg
+vendor/etc/init/android.hardware.sensors@2.0-service.rc
+vendor/etc/vintf/manifest/sensors@2.0.xml
+
 # TEE
 vendor/bin/hw/tee-supplicant
 vendor/etc/init/android.supplicant@2.5-optee.rc
