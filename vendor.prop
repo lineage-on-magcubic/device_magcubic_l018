@@ -1,0 +1,3 @@
+# Audio
+persist.vendor.audio.output.active=OUT_SPK
+persist.vendor.audio.use_sfxmgmt=true
