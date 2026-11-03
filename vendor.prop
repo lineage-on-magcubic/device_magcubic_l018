@@ -10,5 +10,9 @@ ro.surface_flinger.protected_contents=true
 # DRM
 drm.service.enabled=true
 
+# Media
+debug.stagefright.c2inputsurface=-1
+debug.stagefright.c2-poolmask=2424832
+
 # Recovery
 ro.recovery.batteryless=true
