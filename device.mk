@@ -137,6 +137,16 @@ PRODUCT_SHIPPING_API_LEVEL := 34
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/aw \
+    hardware/google/interfaces \
+    hardware/google/pixel \
+
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal-service.pixel \
+    thermal_symlinks
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
 
 # USB
 PRODUCT_PACKAGES += \
