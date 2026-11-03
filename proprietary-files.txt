@@ -91,6 +91,15 @@ vendor/lib/vendor.display.config@1.0.so:vendor/lib/vendor.display.config@1.0-v34
 vendor/lib/hw/hdmi_cec.hermes.so
 vendor/lib/hw/tv_input.hermes.so
 
+# Keymint
+vendor/bin/hw/android.hardware.security.keymint@3.0-service-aw
+vendor/etc/init/android.hardware.security.keymint@3.0-service-aw.rc
+vendor/etc/vintf/manifest/android.hardware.security.keymint-service-aw.xml
+vendor/etc/vintf/manifest/android.hardware.security.secureclock-service-aw.xml
+vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service-aw.xml
+vendor/lib/hw/lib_aw_km_utility.so
+vendor/lib/libkeymint3_ca_aw.so
+
 # TV Server
 system/lib/vendor.sunxi.tv.graphics@1.0.so:vendor/lib/vendor.sunxi.tv.graphics@1.0.so
 vendor/bin/hw/tvserver

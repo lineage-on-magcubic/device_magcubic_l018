@@ -113,6 +113,13 @@ PRODUCT_COPY_FILES += \
 # Kernel
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
+# Keymint
+PRODUCT_PACKAGES += \
+    android.hardware.hardware_keystore.xml
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -120,6 +127,8 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 BOOT_SECURITY_PATCH := 2024-06-05
 INIT_BOOT_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.boot_security_patch=$(BOOT_SECURITY_PATCH)
 
 # Shipping API level
 BOARD_SHIPPING_API_LEVEL := 34
