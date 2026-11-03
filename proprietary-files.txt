@@ -1,0 +1,23 @@
+# Unpinned blobs from h726_p1-user 14 UP1A.231105.001.A1 projector.20251202.150712 release-keys
+
+# Audio
+vendor/lib/hw/audio.blehid.default.so;FIX_SONAME
+vendor/lib/hw/audio.primary.hermes.so
+vendor/lib/libUtility.so
+vendor/lib/libcedarse.so
+vendor/lib/libhalsound.so
+vendor/lib/libhbgdecode.so
+vendor/lib/libminIni.so
+vendor/lib/libtinyxml_trid.so
+
+# Audio (Configs)
+vendor/etc/audio_platform_devices.xml
+vendor/etc/audio_userconfig.ini
+vendor/etc/cedarSE/audio_device_desc.xml
+vendor/etc/cedarSE/audio_sw_delay_param.xml
+vendor/etc/cedarSE/audio_sw_eq_param.xml
+vendor/etc/cedarSE/audio_sw_pass_filter_param.xml
+vendor/etc/cedarSE/audio_sw_route_param.xml
+vendor/etc/cedarSE/audio_sw_volume_param.xml
+vendor/etc/msp_sound_preset.bin
+vendor/etc/remote.txt
