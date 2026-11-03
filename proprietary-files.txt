@@ -21,3 +21,6 @@ vendor/etc/cedarSE/audio_sw_route_param.xml
 vendor/etc/cedarSE/audio_sw_volume_param.xml
 vendor/etc/msp_sound_preset.bin
 vendor/etc/remote.txt
+
+# Bluetooth
+vendor/lib/libbt-aic.so:vendor/lib/libbt-vendor.so;FIX_SONAME;TRYSRCFIRST
