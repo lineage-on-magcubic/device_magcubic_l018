@@ -71,6 +71,13 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -i 's|/system/lib|/vendor/lib|g' "${2}"
             ;;
+        vendor/lib/hw/hwcomposer.hermes.so | \
+        vendor/lib/libdisplayconfig.so | \
+        vendor/lib/libtvpq.so | \
+        vendor/lib/vendor.display.config@1.0-impl.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "vendor.display.config@1.0.so" "vendor.display.config@1.0-v34.so" "${2}"
+            ;;
         *)
             return 1
             ;;

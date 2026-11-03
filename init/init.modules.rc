@@ -23,6 +23,9 @@ on early-init
     insmod /vendor/lib/modules/xvatouch.ko
     # sensors
     insmod /vendor/lib/modules/sc7a20h.ko
+    # tvserver
+    insmod /vendor/lib/modules/vs-osd.ko
+    insmod /vendor/lib/modules/vs-display.ko
     # usb
     insmod /vendor/lib/modules/sunxi-hci.ko
     insmod /vendor/lib/modules/ehci-sunxi.ko

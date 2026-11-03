@@ -32,6 +32,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.tvserver.rc",
+    src: "init.tvserver.rc",
+    relative_install_path: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.sun50iw15p1.rc",
     src: "init.sun50iw15p1.rc",
     relative_install_path: "init/hw",

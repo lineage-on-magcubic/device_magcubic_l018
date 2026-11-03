@@ -1,0 +1,5 @@
+service tvserver /vendor/bin/hw/tvserver
+    interface vendor.aw.homlet.tvsystem.tvserver@1.0::ITvServer default
+    class hal
+    user system
+    group system graphics media

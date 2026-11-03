@@ -1,6 +1,7 @@
 import /vendor/etc/init/hw/init.modules.rc
 import /vendor/etc/init/hw/init.power.rc
 import /vendor/etc/init/hw/init.sensors.rc
+import /vendor/etc/init/hw/init.tvserver.rc
 import /vendor/etc/init/hw/init.sun50iw15p1.usb.rc
 
 on fs
