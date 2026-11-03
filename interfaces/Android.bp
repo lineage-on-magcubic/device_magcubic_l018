@@ -1,0 +1,11 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+prebuilt_hidl_interfaces {
+    name: "hidl_vendor_aw_homlet_tvsystem_tvserver",
+    interfaces: [
+        "vendor.aw.homlet.tvsystem.tvserver@1.0::ITvServer"
+    ]
+}
