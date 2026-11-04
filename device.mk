@@ -60,6 +60,9 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.prebuilt.xml \
     android.hardware.bluetooth_le.prebuilt.xml
 
+# Camera
+PRODUCT_SUPPORTS_CAMERA := false
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
@@ -139,6 +142,9 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/aw \
     hardware/google/interfaces \
     hardware/google/pixel \
+
+# Tuner
+PRODUCT_SUPPORTS_TUNER := false
 
 # Thermal
 PRODUCT_PACKAGES += \
