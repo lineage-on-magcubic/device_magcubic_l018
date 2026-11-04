@@ -4,6 +4,13 @@
 //
 
 prebuilt_etc {
+    name: "fstab.enableswap",
+    src: "fstab.enableswap",
+    vendor: true,
+    vendor_ramdisk_available: true,
+}
+
+prebuilt_etc {
     name: "fstab.sun50iw15p1",
     src: "fstab.sun50iw15p1",
     vendor: true,

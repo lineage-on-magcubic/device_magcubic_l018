@@ -109,6 +109,7 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    fstab.enableswap \
     fstab.sun50iw15p1 \
     fstab.sun50iw15p1.vendor_ramdisk \
     init.modules.rc \
