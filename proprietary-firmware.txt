@@ -1,1 +1,6 @@
+# Unpinned blobs from h726_p1-user 14 UP1A.231105.001.A1 projector.20251202.150712 release-keys
 
+bootloader.img;AB
+dtbo.img;AB
+env.img;AB
+Reserve0.img;AB
