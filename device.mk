@@ -185,5 +185,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vndservicemanager
 
+# Wifi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi-service \
+    hostapd \
+    libwifi-hal-wrapper \
+    wpa_supplicant
+
+PRODUCT_PACKAGES += \
+    android.hardware.wifi.prebuilt.xml \
+    android.hardware.wifi.direct.prebuilt.xml \
+    android.hardware.wifi.passpoint.prebuilt.xml
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/magcubic/l018/l018-vendor.mk)

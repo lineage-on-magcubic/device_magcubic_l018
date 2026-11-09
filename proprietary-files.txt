@@ -235,3 +235,9 @@ vendor/lib/libvideo.so
 vendor/lib/vendor.aw.hardware.btvserver@1.0.so
 vendor/lib/vendor.aw.homlet.tvsystem.tvserver@1.0.so
 vendor/lib/vendor.sunxi.tv.graphics@1.0-impl.so
+
+# Wifi
+vendor/etc/wifi/p2p_supplicant_overlay.conf
+vendor/etc/wifi/wpa_supplicant.conf
+vendor/etc/wifi/wpa_supplicant_overlay.conf
+vendor/lib/libwifi-hal-aic.so:vendor/lib/libwifi-hal-default.so;FIX_SONAME
