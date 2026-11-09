@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <!-- boolean indicating whether the WiFi chipset has 5GHz band support.
+         Note: This config is replacing the config_wifi_dual_band_support
+         since more bands may now be supported (such as 6GHz), the naming dual_band
+         is no longer indicative, and a separate config now exists for each band -->
+    <bool name="config_wifi5ghzSupport">true</bool>
+
+    <!-- Set to "true" to always use the factory MAC saved in WifiConfigStore when available.
+         Set to "false" to get the factory MAC from vendor HAL every time it's needed. -->
+    <bool name="config_wifiSaveFactoryMacToWifiConfigStore">false</bool>
+</resources>

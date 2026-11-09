@@ -138,7 +138,8 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    L018FrameworksOverlay
+    L018FrameworksOverlay \
+    L018WifiOverlay
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
