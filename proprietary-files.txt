@@ -101,7 +101,6 @@ vendor/lib/hw/lib_aw_km_utility.so
 vendor/lib/libkeymint3_ca_aw.so
 
 # Media
-system/lib/libadecoder.so:vendor/lib/libadecoder.so
 vendor/bin/hw/vendor.hardware.drmheapallocator-service
 vendor/etc/cedarc.conf
 vendor/etc/init/vendor.hardware.drmheapallocator-service.rc

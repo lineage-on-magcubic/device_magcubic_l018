@@ -67,8 +67,7 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        vendor/lib/libUtility.so | \
-        vendor/lib/libVE.so)
+        vendor/lib/libUtility.so)
             [ "$2" = "" ] && return 0
             sed -i 's|/system/lib|/vendor/lib|g' "${2}"
             ;;
