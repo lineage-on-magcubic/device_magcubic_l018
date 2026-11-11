@@ -1,0 +1,20 @@
+#
+# Copyright (C) The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+#
+
+key 116     POWER
+
+key 113     VOLUME_MUTE
+key 114     VOLUME_DOWN
+key 115     VOLUME_UP
+
+key 102     HOME
+key 139     MENU
+key 158     BACK
+
+key 103     DPAD_UP
+key 105     DPAD_LEFT
+key 106     DPAD_RIGHT
+key 108     DPAD_DOWN
+key 352     DPAD_CENTER
