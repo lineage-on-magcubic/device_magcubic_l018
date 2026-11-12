@@ -29,4 +29,14 @@
         <transport arch="32">passthrough</transport>
         <fqname>@2.1::IMapper/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>android.hardware.tv.cec</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IHdmiCec/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.tv.input</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ITvInput/default</fqname>
+    </hal>
 </manifest>

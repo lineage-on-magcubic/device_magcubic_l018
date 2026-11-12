@@ -78,6 +78,16 @@ PRODUCT_PACKAGES += \
     android.software.opengles.deqp.level-2021-03-01.prebuilt.xml \
     android.software.vulkan.deqp.level-2021-03-01.prebuilt.xml
 
+# HDMI
+PRODUCT_PACKAGES += \
+    android.hardware.tv.cec@1.0-impl \
+    android.hardware.tv.cec@1.0-service \
+    android.hardware.tv.input@1.0-impl \
+    android.hardware.tv.input@1.0-service
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.hdmi.cec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hdmi.cec.xml
+
 # Init
 PRODUCT_PACKAGES += \
     fstab.sun50iw15p1 \
