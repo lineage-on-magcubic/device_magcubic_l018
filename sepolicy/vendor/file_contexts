@@ -1,0 +1,2 @@
+/dev/block/by-name/Reserve0(_.)?     u:object_r:userdata_block_device:s0
+/Reserve0                            u:object_r:vfat:s0
