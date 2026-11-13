@@ -99,6 +99,12 @@ PRODUCT_PACKAGES += \
     android.hardware.tv.input@1.0-impl \
     android.hardware.tv.input@1.0-service
 
+PRODUCT_PACKAGES += \
+    LiveTv
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-softwinner-vis.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-softwinner-vis.xml
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.hdmi.cec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hdmi.cec.xml
 

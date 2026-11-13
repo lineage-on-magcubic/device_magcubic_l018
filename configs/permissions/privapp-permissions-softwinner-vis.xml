@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <privapp-permissions package="com.softwinner.vis">
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+        <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
+        <permission name="android.permission.TV_INPUT_HARDWARE"/>
+        <permission name="android.permission.HDMI_CEC"/>
+    </privapp-permissions>
+</permissions>

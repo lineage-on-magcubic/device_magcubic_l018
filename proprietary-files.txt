@@ -88,6 +88,7 @@ vendor/lib/vendor.display.config@1.0-impl.so
 vendor/lib/vendor.display.config@1.0.so:vendor/lib/vendor.display.config@1.0-v34.so;FIX_SONAME
 
 # HDMI
+system/priv-app/VideoInputService/VideoInputService.apk:system_ext/priv-app/VideoInputService/VideoInputService.apk
 vendor/lib/hw/hdmi_cec.hermes.so
 vendor/lib/hw/tv_input.hermes.so
 
