@@ -109,6 +109,7 @@ BOARD_USES_METADATA_PARTITION := true
 TARGET_BOARD_PLATFORM := hermes
 
 # Properties
+TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Recovery
