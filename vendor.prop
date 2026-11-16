@@ -10,6 +10,11 @@ ro.surface_flinger.protected_contents=true
 # DRM
 drm.service.enabled=true
 
+# HDMI
+persist.vendor.arc_port=1
+persist.vendor.cec_address=36
+ro.hdmi.device_type=0
+
 # Media
 debug.stagefright.c2inputsurface=-1
 debug.stagefright.c2-poolmask=2424832
