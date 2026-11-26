@@ -134,7 +134,8 @@ PRODUCT_COPY_FILES += \
 
 # Keylayout
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/keylayout/sunxi-ir.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/sunxi-ir.kl
+    $(LOCAL_PATH)/configs/keylayout/sunxi-ir.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/sunxi-ir.kl \
+    $(LOCAL_PATH)/configs/keylayout/Vendor_1d5a_Product_c081.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/Vendor_1d5a_Product_c081.kl
 
 # Media
 PRODUCT_COPY_FILES += \

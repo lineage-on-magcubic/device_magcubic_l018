@@ -3,18 +3,21 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-key 116     POWER
+key 116   POWER
+key 113   VOLUME_MUTE
 
-key 113     VOLUME_MUTE
-key 114     VOLUME_DOWN
-key 115     VOLUME_UP
+key 352   DPAD_CENTER
+key 105   DPAD_LEFT
+key 106   DPAD_RIGHT
+key 108   DPAD_DOWN
+key 103   DPAD_UP
 
-key 102     HOME
-key 139     MENU
-key 158     BACK
+key 158   BACK
+key 141   SETTINGS
 
-key 103     DPAD_UP
-key 105     DPAD_LEFT
-key 106     DPAD_RIGHT
-key 108     DPAD_DOWN
-key 352     DPAD_CENTER
+key 115   VOLUME_UP
+key 114   VOLUME_DOWN
+key 102   HOME
+
+#key 643   TODO_KEYCODE
+#key 642   TODO_KEYCODE
