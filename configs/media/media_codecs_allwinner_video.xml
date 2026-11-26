@@ -19,7 +19,7 @@
             <Alias name="OMX.allwinner.h264.decoder" />
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports" />
-            <Limit name="size" min="128x96" max="3840x2160" />
+            <Limit name="size" min="128x96" max="1920x1080" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
             <Limit name="blocks-per-second" min="1" max="972000" />
@@ -31,7 +31,7 @@
         <MediaCodec name="c2.allwinner.hevc.decoder" type="video/hevc" >
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports" />
-            <Limit name="size" min="176x144" max="3840x2160" />
+            <Limit name="size" min="176x144" max="1920x1080" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
             <Limit name="blocks-per-second" min="1" max="1944000" />
@@ -115,7 +115,7 @@
         <MediaCodec name="c2.allwinner.vp9.decoder" type="video/x-vnd.on2.vp9" >
             <Quirk name="requires-allocate-on-input-ports" />
             <Quirk name="requires-allocate-on-output-ports" />
-            <Limit name="size" min="176x144" max="3840x2160" />
+            <Limit name="size" min="176x144" max="1920x1080" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
             <Limit name="blocks-per-second" min="1" max="1944000" />

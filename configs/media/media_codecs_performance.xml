@@ -78,7 +78,6 @@
             <Limit name="measured-frame-rate-640x360" range="61-300" />
             <Limit name="measured-frame-rate-1280x720" range="44-215" />
             <Limit name="measured-frame-rate-1920x1080" range="37-184" />
-            <Limit name="measured-frame-rate-3840x2160" range="13-64" />
         </MediaCodec>
         <MediaCodec name="c2.allwinner.mpeg2.decoder" type="video/mpeg2" update="true">
             <Limit name="measured-frame-rate-320x180" range="30-60" />
