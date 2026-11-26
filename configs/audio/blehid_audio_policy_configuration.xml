@@ -10,7 +10,7 @@
         </mixPort>
     </mixPorts>
     <devicePorts>
-        <devicePort tagName="hbg_audio" type="AUDIO_DEVICE_IN_BLEHID" role="source">
+        <devicePort tagName="hbg_audio" type="AUDIO_DEVICE_IN_BLUETOOTH_BLE" role="source">
             <profile name="" format="AUDIO_FORMAT_PCM_16_BIT" channelMasks="AUDIO_CHANNEL_IN_MONO" samplingRates="16000" />
         </devicePort>
     </devicePorts>
