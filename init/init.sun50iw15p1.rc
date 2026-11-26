@@ -15,6 +15,7 @@ on post-fs-data
 
     # HBG configuration
     mkdir /data/vendor/HBG 0775 audioserver audioserver
+    symlink /vendor/etc/remote.txt /data/vendor/HBG/remote.txt
 
     # Create directory for audio data
     mkdir /data/vendor/hardware/audio_d 0777 audio audio
